@@ -1,0 +1,137 @@
+/* ======== ESTILO GERAL ======== */
+body {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== TÍTULOS ======== */
+h1 {
+    text-align: center;
+    color: #ff4d4d;
+    text-shadow: 0 0 10px #ff4d4d;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* ======== SEÇÕES ======== */
+section {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.3);
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* ======== IMAGENS ======== */
+img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 400px;
+    border-radius: 1rem;
+    border: 3px solid #ff4d4d;
+    box-shadow: 0 0 20px #ff4d4d;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff1a1a;
+}
+
+/* ======== LISTAS ======== */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ======== LINKS ======== */
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff9999;
+    text-decoration: underline;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}
+
+/* ======== ANIMAÇÃO DE ENTRADA ======== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;          /* começa invisível */
+        transform: translateY(20px); /* levemente abaixo */
+    }
+    to {
+        opacity: 1;          /* termina visível */
+        transform: translateY(0);   /* posição normal */
+    }
+}
+
+section {
+    animation: fadeIn 0.8s ease-in-out; /* aplica o efeito em 1 segundo */
+}
+
+/* ======== ANIMAÇÃO DE ENTRADA COM ATRASO ======== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplica o fade-in a cada seção */
+section {
+    opacity: 0; /* começa invisível */
+    animation: fadeIn 0.8s ease-in-out forwards; /* 'forwards' mantém o estado final */
+}
+
+/* Atrasos entre as seções */
+section:nth-of-type(1) {
+    animation-delay: 0.2s; /* Irelia */
+}
+
+section:nth-of-type(2) {
+    animation-delay: 0.6s; /* Vladimir */
+}
+
+section:nth-of-type(3) {
+    animation-delay: 1s; /* Aatrox */
+}
